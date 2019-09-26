@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<head th:replace = "base :: header" > </head>
 <body>
+<nav th:replace = "base :: navlinks"></nav>
+<div class="card" style="width: 18rem;">
+    <img src="https://res.cloudinary.com/drpyvuhac/image/upload/v1569530630/fall-1072821_1920_0_oryogc.jpg" class="card-img-top" alt="fall">
+    <div class="card-body">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
+            <!--Social Media buttons -->
+            </li>
+            <li class="nav-item">
+                <!--facebook-->
+                <a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <!-- twitter-->
+            <li class="nav-item">
+                <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
+            </li>
+            <!-- Google +-->
+            <li class="nav-item">
+                <a class="btn-floating btn-lg btn-gplus" type="button" role="button"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <!-- Linkedin-->
+            <li class="nav-item">
+                <a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <!--Instergram-->
+            <li class="nav-item">
+                <a class="btn-floating btn-lg btn-ins" type="button" role="button"><i class="fab fa-instagram"></i></a>
+            </li>
+
+        </ul>
+        <p class="card-text">
+           <h5>Bio</h5>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut culpa, cupiditate delectus est illo, natus necessitatibus nesciunt non numquam officia perferendis perspiciatis qui temporibus ullam ut. Adipisci, harum?
+        </p>
+    </div>
+</div>
+
+<div th:replace = "base :: scripts"></div>
 
 </body>
 </html>
