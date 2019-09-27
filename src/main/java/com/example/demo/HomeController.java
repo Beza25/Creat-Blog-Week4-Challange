@@ -13,6 +13,10 @@ public class HomeController {
 
     @RequestMapping("/wlb_time")
     public String wlb_time(){ return  "wlb_time"; }
+    //-----------Object Orinted language --------------
+    @RequestMapping("/obl_java")
+    public String obl_java(){ return  "obl_java"; }
+
 
 
     //------------MVC-------------
