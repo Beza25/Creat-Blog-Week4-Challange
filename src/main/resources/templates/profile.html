@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <header th:replace = "base :: header" > </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             background: url('https://res.cloudinary.com/drpyvuhac/image/upload/v1569574056/b667add99b19acdc5b11f51c82bffaca_h279q8.jpg') no-repeat center center fixed;
@@ -15,6 +16,15 @@
             margin: 0 auto;
             background-color: aliceblue;
         }
+        .social_media{
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
 
     </style>
 </head>
@@ -29,31 +39,32 @@
         <h1> Thomas Curtain </h1>
         <h2 class="card-title">Bio</h2>
         <p class="card-text">Thomas Curtain, who plays the role of Michael, is extremely proud to be joining the summer touring cast of Mary Poppins. Thomas lives in Brooklyn with his family and attends the Waterston School for the Performing Arts. He is in the fourth grade, and his favorite subjects are English and Social Studies. Thomas first appeared on Broadway at the age of six as Chip in Beauty and the Beast. He is best-known for playing Gavroche in Les Misérables, during the show’s final season on Broadway. Thomas also enjoys playing soccer and has recently begun learning to play the violin. Thomas would like to thank his mom, dad, and his sister Kate for their love and support. He also thanks director Frank Sutton for allowing him to enjoy this valuable experience. Thomas dedicates his performances this season to the memory of his late grandmother, Ruth Curtain, a former Broadway star who first instilled in him a love of performing
-            .</p>
+            </p>
     </div>
 
     <div class="card-body">
-<!--        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>-->
-        <!--facebook-->
-        <li>
-            <a class="btn btn-primary" href="/" role="button" > <i class="fab fa-facebook-f"></i></a>
-            <!-- twitter-->
-            <a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>
-            <!-- Google +-->
-            <a class="btn-floating btn-lg btn-gplus" type="button" role="button"><i class="fab fa-google-plus-g"></i></a>
-            <!-- Linkedin-->
-            <a class="btn-floating btn-lg btn-li" type="button" role="button"><i class="fab fa-linkedin-in"></i></a>
-            <!--Instergram-->
-            <a class="btn-floating btn-lg btn-ins" type="button" role="button"><i class="fab fa-instagram"></i></a>
-            <!--  bootstrap      -->
+        <div class="social_media">
 
-        </li>
+            <li>
+<!--                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Let's connect</a>-->
+                <!--facebook-->
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <!-- twitter-->
+                <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+                <!-- Linkedin-->
+                <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+                <!-- Google +-->
+                <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-google"></a>
+                <!--instagram-->
+                <a href=" https://www.instagram.com/" class="fa fa-instagram"></a>
 
+            </li>
+
+
+        </div>
 
     </div>
 </div>
-
-<
 
 <div th:replace = "base :: footer"></div>
 <div th:replace = "base :: scripts"></div>
