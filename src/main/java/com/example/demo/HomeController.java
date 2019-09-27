@@ -28,6 +28,9 @@ public class HomeController {
     @RequestMapping("/git_intro")
     public String git_intro(){ return  "git_intro"; }
 
+    @RequestMapping("/git_why")
+    public String git_why(){ return  "git_why"; }
+
 
 
     //------------MVC-------------

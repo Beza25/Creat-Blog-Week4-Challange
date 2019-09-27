@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <header th:replace="base :: header"></header>
+    <style>
+        #jumbotron {
+            max-width: 70%;
+            max-height: 100%;
+            margin: 0 auto;
+        }
+
+        body {
+            background: url('https://res.cloudinary.com/drpyvuhac/image/upload/v1569608966/github_xglzsw.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+
+    </style>
+
+</head>
+<nav th:replace="base :: navlinks"></nav>
+<div id="jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">What Is GitHub, and Why Should I Use It?</h1>
+        <p class="lead">
+            GitHub is an open-source repository hosting service, sort of like a cloud for code. It hosts your source code projects in a variety of different programming languages and keeps track of the various changes made to every iteration. The service is able to do this by using git, a revision control system that runs in the command line interface.
+
+
+            Other sources are similar to GitHub—including BitBucket, Microsoft Team Foundation Server, and more—but the sheer size of the community should be important to you if you want as many people as possible to see your project. As of 2018, GitHub reported having more than 28 million users, significantly more than its competitors.
+
+
+            The other differences involve cost. GitHub offers private repositories only at an additional cost, while a few of the other services offer private repositories for free. However, these typically come with limited storage and bandwidth.
+
+
+            Using GitHub makes it easier to collaborate with colleagues and peers and look back at previous versions of your work. If you aren't already using GitHub for your coding projects, here are a few reasons to consider doing so.
+
+            <br/>  <br/>  <br/>
+        <h3> Have Your Code Reviewed by the Community </h3>
+
+        Your project is a skeleton. It does what you want it to do, but you’re not always sure how the wider population will implement it—or if it even works for everyone.
+
+        Fortunately, when you post your project on GitHub, the wider community of programmers and hobbyists can download and evaluate your work. They can give you a heads-up on possible issues such as conflicts or unforeseen dependency issues.
+
+        <br/>  <br/>  <br/>
+        <h3>GitHub Is a Repository </h3>
+        WBecause GitHub is a repository, it allows your work to get out in front of the public. Moreover, it is one of the largest coding communities around, so using it can provide wide exposure for your project and for you. The more people you have to review your project, the more attention and use it is likely to attract.
+        <br/>  <br/>
+        <h3>Collaborate and Track Changes in Your Code Across Versions</h3>
+        As when using Microsoft Word or Google Drive, you can have a version history of your code so that is not lost with every iteration.
+        GitHub also tracks changes in a changelog, so you can know exactly what is changed each time.
+        This feature is especially helpful for looking back in time and quickly identifying changes a collaborator made.
+        <br/>  <br/><br/>
+        <h3>Use Multiple Integration Options</h3>
+        GitHub can integrate with common platforms such as Amazon and Google Cloud, as well as services such as Code Climate to track your feedback, and it can highlight syntax in more than 200 different programming languages.
+
+        </p>
+
+        <br/><br/>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+            <a class="btn btn-primary btn-lg" href="https://www.thebalancecareers.com/what-is-github-and-why-should-i-use-it-2071946" role="button">Source</a>
+        </p>
+        <br/><br/>
+    </div>
+</div>
+
+<body>
+
+<br/><br/><br/><br/><br/>
+<div th:replace="base :: footer"></div>
+<div th:replace="base :: scripts"></div>
+</body>
+</html>
