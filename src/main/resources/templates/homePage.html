@@ -3,9 +3,109 @@
 <head >
     <header th:replace = "base :: header"></header>
 </head>
+<style>
+
+    body {
+        background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+    .content{
+        max-width: 50%; max-height: 50%;
+        margin: 0 auto;
+
+    }
+    .jumbotron{
+        background-color: rgba(200, 100, 0, 0.3);;
+    }
+
+
+</style>
 <body>
 <nav th:replace = "base :: navlinks"></nav>
+<h1> Welcome to my blog</h1>
 
+<div class = "content">
+    <div class="jumbotron">
+        <h2 class="display-4">Work life Balance</h2>
+        <p class="lead"><h3>Title 1</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+        <p class="lead"><h3>Title 2</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+    </div>
+    <br>
+    <div class="jumbotron">
+        <h2 class="display-4">Using GitHub</h2>
+        <p class="lead"><h3>Creating Repository</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more..</a>
+        </p>
+        <p class="lead"><h3>Working on Different Branches</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+    </div>
+    <div class="jumbotron">
+        <h2 class="display-4">Object Oriented Program</h2>
+        <p class="lead"><h3>Java</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+        <p class="lead"><h3>Python</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+    </div>
+    <br>
+    <div class="jumbotron">
+        <h2 class="display-4">Model View Controller</h2>
+        <p class="lead"><h3>Introduction </h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+        <p class="lead"><h3>Title 2</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+    </div>
+    <div class="jumbotron">
+        <h2 class="display-4">Merging Command line</h2>
+        <p class="lead"><h3>Title 1</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+        <p class="lead"><h3>Title 2</h3></p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+        </p>
+    </div>
+</div>
 
 
 <div th:replace = "base :: scripts"></div>
