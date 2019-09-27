@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     @RequestMapping("/")
     public String homePage(){return "homePage";}
-    //-----------Content--------------
+    @RequestMapping("/bootcamp")
+    public String bootCamp(){return "bootcamp";}
+
+    @RequestMapping("/profile")
+    public String profile(){return "profile";}
+    //---------*****Content********--------------
     @RequestMapping("/wlb_tips")
     public String WLB(){return"wlb_tips";}
 
@@ -39,10 +44,6 @@ public class HomeController {
 
 
     //------------end-------------------
-    @RequestMapping("/bootcamp")
 
-    public String bootCamp(){return "bootcamp";}
-    @RequestMapping("/profile")
-    public String profile(){return "profile";}
 
 }
