@@ -11,6 +11,12 @@
         <title th:fragment="head-title">Course and Student App</title>
     </header>
     <style>
+        .footer{
+            position: absolute;
+            margin: 0;
+            background-color: rgba(200, 100, 200, 0.3);
+        }
+
 
     </style>
 </head>
@@ -35,9 +41,13 @@
         </ul>
     </div>
 </nav>
-<footer th:fragment="footer" class="page-footer font-small blue">
-    <div class="footer-copyright text-center py-3 jumbotron">© 2018 Copyright - Beza & Daniel</div>
-</footer>
+<div class = "footer">
+    <footer th:fragment="footer" class="page-footer font-small blue ">
+        <div class="footer-copyright text-center py-3 jumbotron">© 2018 Copyright Beza </div>
+    </footer>
+
+</div>
+
 <div th:fragment="scripts">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -18,9 +18,11 @@
 
     }
     .jumbotron{
-        background-color: rgba(200, 100, 0, 0.3);;
+        background-color: rgba(200, 100, 0, 0.3);
     }
-
+    .date{
+        color: antiquewhite;
+    }
 
 </style>
 <body>
@@ -30,12 +32,17 @@
 <div class = "content">
     <div class="jumbotron">
         <h2 class="display-4">Work life Balance</h2>
-        <p>Date... Author ...</p>
-        <p class="lead"><h3>Title 1</h3></p>
+        <p class = "date">By Skye Schooley, StaffJune | 19, 2019 10:00 am EST</p>
+        <p class="lead"><h3>8 Ways to Improve Your Work-Life Balance Today</h3></p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p>
+            When you hear "work-life balance," you probably imagine having an extremely
+            productive day at work and leaving early to spend the other half of the day with friends and family.
+            While this may seem ideal, it is not always possible.
+
+        </p>
         <p class="lead">
-            <a class="btn btn-outline-danger" href="#" role="button">Learn more...</a>
+            <a class="btn btn-outline-danger" href="/wlb_tips" role="button">Learn more...</a>
         </p>
         <b></b>
         <p>Date... Author ...</p>
@@ -122,7 +129,7 @@
     </div>
 </div>
 
-
+<div th:replace = "base :: footer"></div>
 <div th:replace = "base :: scripts"></div>
 </body>
 </html>

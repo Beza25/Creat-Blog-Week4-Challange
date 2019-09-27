@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace = "base :: header"> </head>
+<head >
+    <header th:replace = "base :: header"> </header>
+</head>
+<style>
+    #jumbotron{
+        max-width: 70%; max-height: 100%;
+        margin: 0 auto;
+    }
+    body{
+        background: url('https://res.cloudinary.com/drpyvuhac/image/upload/v1569554073/b78b9027-38f3-4503-9a03-2933dbb6f3eb-DCA_0803_10_Best_fall_color_cuwtmv.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+</style>
 
 
 <body>
 <nav th:replace = "base :: navlinks"></nav>
 
+<div id = "jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Title</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <br/><br/><br/><br/><br/>
+    </div>
+</div>
 
+
+<br/><br/><br/><br/><br/>
+<div th:replace = "base :: footer"></div>
 <div th:replace = "base :: scripts"></div>
 
 </body>
