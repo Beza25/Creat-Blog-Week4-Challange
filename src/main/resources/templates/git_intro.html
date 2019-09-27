@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <header th:replace="base :: header"></header>
+    <style>
+        #jumbotron {
+            max-width: 70%;
+            max-height: 100%;
+            margin: 0 auto;
+        }
+
+        body {
+            background: url('https://res.cloudinary.com/drpyvuhac/image/upload/v1569607621/jetpack-octocat-airlock-b4e1d022c0113c997328f6598d16e58ad049140e50da4859d6b4d174890bb1c8_ki7p7g.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+
+    </style>
+
+</head>
+<nav th:replace="base :: navlinks"></nav>
+<div id="jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">An Intro to Git and GitHub for Beginners (Tutorial)</h1>
+        <p class="lead">
+            In August, we hosted a Women Who Code meetup at HubSpot and led a workshop for beginners on using git and GitHub.
+            I first walked through a slide presentation on the basics and background of git and then we broke out into groups to run through a tutorial I created to simulate working on a large, collaborative project.
+            We got feedback after the event that it was a helpful, hands-on introduction. So if you're new to git, too, follow the steps below to get comfortable making changes to the code base, opening up a pull request (PR), and merging code into the master branch.
+            Any important git and GitHub terms are in bold with links to the official git reference materials.
+
+            <br/>  <br/>  <br/>
+        <h3> Step 0: Install git and create a GitHub account </h3>
+
+        The first two things you'll want to do are install git and create a free GitHub account.
+
+        Follow the instructions here to install git (if it's not already installed). Note that for this tutorial we will be using git on the command line only. While there are some great git GUIs (graphical user interfaces), I think it's easier to learn git using git-specific commands first and then to try out a git GUI once you're more comfortable with the command.
+
+        Once you've done that, create a GitHub account here.  (Accounts are free for public repositories, but there's a charge for private repositories.)
+
+
+        <br/>  <br/>  <br/>
+        <h3>Step 1: Create a local git repository </h3>
+        When creating a new project on your local machine using git, you'll first create a new repository (or often, 'repo', for short).
+
+        To use git we'll be using the terminal. If you don't have much experience with the terminal and basic commands, check out this tutorial (especially the 'Navigating the Filesystem' and 'Moving Around' sections).
+
+        To begin, open up a terminal and move to where you want to place the project on your local machine using the cd (change directory) command. For example, if you have a 'projects' folder on your desktop, you'd do something like:
+
+        To initialize a git repository in the root of the folder, run the git init command:
+
+        Go ahead and add a new file to the project, using any text editor you like or running a touch command.
+        Once you've added or modified files in a folder containing a git repo, git will notice that changes have been made inside the repo.
+        But, git won't officially keep track of the file (that is, put it in a commit - we'll talk more about commits next) unless you explicitly tell it to.
+        After creating the new file, you can use the git status command to see which files git knows exist.
+
+        What this basically says is, "Hey, we noticed you created a new file called mnelson.txt, but unless you use the 'git add' command we aren't going to do anything with it."
+        <br/>  <br/>
+        <h3>An interlude: The staging environment, the commit, and you</h3>
+        One of the most confusing parts when you're first learning git is the concept of the staging environment and how it relates to a commit.
+
+        A commit is a record of what files you have changed since the last time you made a commit. Essentially, you make changes to your repo (for example, adding a file or modifying one) and then tell git to put those files into a commit.
+
+        Commits make up the essence of your project and allow you to go back to the state of a project at any point.
+
+        So, how do you tell git which files to put into a commit? This is where the staging environment or index come in. As seen in Step 2, when you make changes to your repo, git notices that a file has changed but won't do anything with it (like adding it in a commit).
+
+        To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the git add <!--filename--> command (see Step 3 below).
+
+        Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the git commit command.
+
+        Note: The staging environment, also called 'staging', is the new preferred term for this, but you can also see it referred to as the 'index'.
+        <br/>  <br/><br/>
+        <h3>Step 3: Add a file to the staging environment</h3>
+        Add a file to the staging environment using the git add command.
+
+        If you rerun the git status command, you'll see that git has added the file to the staging environment (notice the "Changes to be committed" line).
+
+        To reiterate, the file has not yet been added to a commit, but it's about to be.
+        <br/>  <br/><br/>
+        <h3>Step 4: Create a commit</h3>
+        It's time to create your first commit!
+
+        Run the command git commit -m "Your message about the commit"
+        The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. Don't put a message like "asdfadsf" or "foobar". That makes the other people who see your commit sad. Very, very, sad.
+        <br/>  <br/><br/>
+        <h3>Step 5: Create a new branch</h3>
+        Now that you've made a new commit, let's try something a little more advanced.
+
+        Say you want to make a new feature but are worried about making changes to the main project while developing the feature. This is where git branches come in.
+
+        Branches allow you to move back and forth between 'states' of a project. For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you're done with the page, you can merge your changes from your branch into the master branch. When you create a new branch, Git keeps track of which commit your branch 'branched' off of, so it knows the history behind all the files.
+
+        Let's say you are on the master branch and want to create a new branch to develop your web page. Here's what you'll do: Run git checkout -b "<!--my branch name-->". This command will automatically create a new branch and then 'check you out' on it, meaning git will move you to that branch, off of the master branch.
+
+            After running the above command, you can use the git branch command to confirm that your branch was created:
+
+            The branch name with the asterisk next to it indicates which branch you're pointed to at that given time.
+
+            Now, if you switch back to the master branch and make some more commits, your new branch won't see any of those changes until you merge those changes onto your new branch.
+        <br/>  <br/><br/>
+        <h3>Step 6: Create a new repository on GitHub</h3>
+            If you only want to keep track of your code locally, you don't need to use GitHub. But if you want to work with a team, you can use GitHub to collaboratively modify the project's code.
+
+
+
+            To create a new repo on GitHub, log in and go to the GitHub home page. You should see a green '+ New repository' button:
+
+
+            </p>
+
+        <br/><br/>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+            <a class="btn btn-primary btn-lg" href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" role="button">Source</a>
+        </p>
+        <br/><br/>
+    </div>
+</div>
+
+<body>
+
+<br/><br/><br/><br/><br/>
+<div th:replace="base :: footer"></div>
+<div th:replace="base :: scripts"></div>
+</body>
+</html>

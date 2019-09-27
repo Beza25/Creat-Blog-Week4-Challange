@@ -18,11 +18,15 @@ public class HomeController {
 
     @RequestMapping("/wlb_time")
     public String wlb_time(){ return  "wlb_time"; }
+
     //-----------Object Orinted language --------------
     @RequestMapping("/obl_java")
     public String obl_java(){ return  "obl_java"; }
     @RequestMapping("/obl_python")
     public String obl_python(){ return  "obl_python"; }
+    //-----------GitHub--------------
+    @RequestMapping("/git_intro")
+    public String git_intro(){ return  "git_intro"; }
 
 
 
