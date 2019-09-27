@@ -22,6 +22,12 @@ public class HomeController {
     @RequestMapping("/mvc_springboot")
     public String mvc_springboot(){return "mvc_springboot";}
 
+    //------------Exc-------------
+    @RequestMapping("/ex_physical")
+    public String ex_physical(){return "ex_physical";}
+
+
+
 
 
     //------------end-------------------
