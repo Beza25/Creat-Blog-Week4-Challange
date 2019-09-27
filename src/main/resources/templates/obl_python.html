@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <header th:replace="base :: header"></header>
+</head>
+<style>
+    #jumbotron {
+        max-width: 70%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    body {
+        background: url('https://res.cloudinary.com/drpyvuhac/image/upload/v1569576256/python_g9e4nx.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+</style>
+
+
+<body>
+<nav th:replace="base :: navlinks"></nav>
+
+<div id="jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Title</h1>
+        <p class="lead"><br/><br/><br/>
+            Python is a widely used general-purpose, high level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed for emphasis on code readability, and its syntax allows programmers to express concepts in fewer lines of code.
+
+            Python is a programming language that lets you work quickly and integrate systems more efficiently.
+
+            There are two major Python versions- Python 2 and Python 3. Both are quite different.
+        </p>
+        <br/><br/>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+            <a class="btn btn-primary btn-lg" href="https://www.geeksforgeeks.org/python-language-introduction/">Source</a>
+        </p>
+        <br/><br/>
+    </div>
+</div>
+
+
+<br/><br/><br/><br/><br/>
+<div th:replace="base :: footer"></div>
+<div th:replace="base :: scripts"></div>
+
+</body>
+</html>
