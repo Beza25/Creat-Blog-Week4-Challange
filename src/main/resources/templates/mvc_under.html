@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <header th:replace="base :: header"></header>
+</head>
+<style>
+    #jumbotron {
+        max-width: 70%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    body {
+        background: url('https://res.cloudinary.com/drpyvuhac/image/upload/v1569568027/Understanding-The-Practice-Dynamic_ejetsx.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+</style>
+
+
+<body>
+<nav th:replace="base :: navlinks"></nav>
+
+<div id="jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Understanding Model-View-Controller</h1>
+        <p class="lead">
+            Like everything else in software engineering, it seems, the concept of Model-View-Controller was originally invented by Smalltalk programmers.
+
+            More specifically, it was invented by one Smalltalk programmer, Trygve Reenskaug. Trygve maintains a page that explains the history of MVC in his own words. He arrives at these definitions in a paper he published on December 10th, 1979:
+        <br/><br/>
+        <h3>1.  Models </h3>
+
+            Models represent knowledge. A model could be a single object (rather uninteresting), or it could be some structure of objects.
+
+            There should be a one-to-one correspondence between the model and its parts on the one hand, and the represented world as perceived by the owner of the model on the other hand.
+        <br/><br/>
+        <h3>2.  Views</h3>
+
+            A view is a (visual) representation of its model. It would ordinarily highlight certain attributes of the model and suppress others. It is thus acting as a presentation filter.
+
+            A view is attached to its model (or model part) and gets the data necessary for the presentation from the model by asking questions. It may also update the model by sending appropriate messages. All these questions and messages have to be in the terminology of the model, the view will therefore have to know the semantics of the attributes of the model it represents.
+        <br/><br/>
+        <h3>3. Controllers</h3>
+
+            A controller is the link between a user and the system. It provides the user with input by arranging for relevant views to present themselves in appropriate places on the screen. It provides means for user output by presenting the user with menus or other means of giving commands and data. The controller receives such user output, translates it into the appropriate messages and pass these messages on to one or more of the views.
+
+
+
+        </p>
+        <br/><br/>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+            <a class="btn btn-primary btn-lg" href="https://blog.codinghorror.com/understanding-model-view-controller/" role="button">Source</a>
+        </p>
+        <br/><br/>
+    </div>
+</div>
+
+
+<br/><br/><br/><br/><br/>
+<div th:replace="base :: footer"></div>
+<div th:replace="base :: scripts"></div>
+
+</body>
+</html>

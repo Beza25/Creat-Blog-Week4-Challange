@@ -14,6 +14,11 @@ public class HomeController {
     @RequestMapping("/wlb_time")
     public String wlb_time(){ return  "wlb_time"; }
 
+
+    //------------MVC-------------
+    @RequestMapping("/mvc_under")
+    public String mvc_under(){return "mvc_under";}
+
     //------------end-------------------
     @RequestMapping("/bootcamp")
 
