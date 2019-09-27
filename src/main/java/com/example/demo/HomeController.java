@@ -21,6 +21,8 @@ public class HomeController {
     //-----------Object Orinted language --------------
     @RequestMapping("/obl_java")
     public String obl_java(){ return  "obl_java"; }
+    @RequestMapping("/obl_python")
+    public String obl_python(){ return  "obl_python"; }
 
 
 
