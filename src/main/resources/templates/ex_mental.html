@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <header th:replace="base :: header"></header>
+</head>
+<style>
+    #jumbotron {
+        max-width: 70%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    body {
+        background: url('https://static.psycom.net/wp-content/uploads/2019/03/karate-kick-uriel-soberanes-489267-unsplash-1280x429.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+</style>
+
+
+<body>
+<nav th:replace="base :: navlinks"></nav>
+
+<div id="jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">The Psychological Benefits of Exercise</h1>
+        <p class="lead">
+        <br/> <br/> <br/>
+        <h2>Stress and Stress Reduction </h2>
+            Stress is a physical and mental response to a threat, demand, or experience. It can contribute to anxiety and depression, two of the most common mental health conditions. Anxiety disorders affect 40 million US adults annually2 (ADAA), and a 2016 study estimated that 16.2 million people in the US experienced a major depressive episode in the last year3 (NIMH). This does not include the estimated 3-6% of the U. population who have dealt with less severe depression.4 (Sansone)
+
+            When Becca realized what might be causing her health issues, her partner suggested they try some stress reduction techniques, including turning off their screens after a certain time, not working too late, and exercising every day. Becca decided to see if these changes made a difference.
+
+            Although she’d been working out regularly since moving to Hong Kong in 2015, more recently, Becca had been too busy—and tired—to work out. But she started with gentle, low-impact walks and swims, and fortunately, “I saw improvements quite quickly,” she says. Eventually, Becca built up the stamina that today allows her to run, swim, weight train, and box every week, a combination she credits with keeping her stress levels (and debilitating symptoms) under control.
+
+            Since she’s started working out again, “I’ve had a few flare-ups [of symptoms], and this always coincides with work getting busy, me skipping a few workouts, and beginning a spiral of frustration and fatigue.” But “In general, since I began exercising, I feel so much more confident in myself, more capable, and more energized.”
+        <br/> <br/> <br/>
+        <h2> Get Your Sneakers On</h2>
+            And now, a major new study1  has confirmed what Becca discovered: regular physical activity improves mental health. In an analysis of data from more than 1.2 million US adults, subjects reported an average of almost 3.4 days of poor mental health in the past month. (The researchers asked study participants about depression, stress, and emotional problems.) However, those who exercised struggled nearly 1.5 fewer days a month, a 43.2% decrease in mental health burden.
+
+            The study found that team sports had the strongest effect on mood, lowering the mental health burden by more than 22%. This may be due to “the sociality of structured team sports,” says the study’s first author, Sammi Chekroud, a PhD student at the Oxford Centre for Human Brain Activity, part of the Wellcome Centre for Integrative Neuroimaging in Oxford. “Given feelings of isolation or loneliness that are often expressed by individuals with mood disorders, it’s possible that structured exercise with other individuals helps to improve pro-sociality and reduces some of the symptoms of low mood,” he explains. Cycling and aerobic and gym activities also reduced the mental health burden by more than 20%.
+
+            But a lack of athletic skill is no barrier to reaping the benefits: Walking reduces the number of days of poor mental health by more than 17%, and even household chores lowered the mental health burden by about 10%. Mind-body practices like yoga and tai chi are also effective.
+        </p>
+
+
+        <br/><br/>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+            <a class="btn btn-primary btn-lg" href="https://www.psycom.net/exercise-benefits-mental-health" role="button">Source</a>
+        </p>
+        <br/><br/>
+    </div>
+</div>
+
+
+<br/><br/><br/><br/><br/>
+<div th:replace="base :: footer"></div>
+<div th:replace="base :: scripts"></div>
+
+</body>
+</html>
