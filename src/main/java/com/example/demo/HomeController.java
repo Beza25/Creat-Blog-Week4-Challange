@@ -19,6 +19,11 @@ public class HomeController {
     @RequestMapping("/mvc_under")
     public String mvc_under(){return "mvc_under";}
 
+    @RequestMapping("/mvc_springboot")
+    public String mvc_springboot(){return "mvc_springboot";}
+
+
+
     //------------end-------------------
     @RequestMapping("/bootcamp")
 

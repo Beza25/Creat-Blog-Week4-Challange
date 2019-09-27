@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <header th:replace="base :: header"></header>
+</head>
+<style>
+    #jumbotron {
+        max-width: 70%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    body {
+        background: url('https://res.cloudinary.com/drpyvuhac/image/upload/v1569569324/everything-must-know-spring-boot-application-scratch_12_chmus4.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+</style>
+
+
+<body>
+<nav th:replace="base :: navlinks"></nav>
+
+<div id="jumbotron" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Spring Boot: The Most Notable Features You Should Know</h1>
+        <p class="lead">
+
+    <br/>  <br/>  <br/>
+    <h3> What Is Spring Boot?</h3>
+
+        All in all, Spring Boot is a project built on the top of the Spring framework. It provides a simpler and faster way to set up, configure, and run both simple and web-based applications.
+        In the Spring core framework, you need to configure all the things for yourself. Hence, you can have a lot of configuration files, such as XML descriptors. That’s one out of the main problems that Spring Boot solves for you.
+
+        It smartly chooses your dependencies, auto-configures all the features you will want to use, and you can start your application with one click. Furthermore, it also simplifies the deployment process of your application.
+
+        It can be a bit frightening for a few of you, because it seems that there a lot of “magic” things happening in the background. Despite that, I will explain the best features of the framework. I hope you take the advantage of this additional knowledge on Spring Boot in your future projects. It really makes your life simpler.
+
+        Firstly, let’s see the notable features that make it unique and easy to use.
+    <br/>  <br/>  <br/>
+    <h3>Notable Features</h3>
+        Auto-configuration: It sets up your application based on the surrounding environment, as well as hints what the developers provide.
+        Standalone: Literally, it's completely standalone. Hence, you don’t need to deploy your application to a web server or any special environment. Your only task is to click on the button or give out the run command, and it will start.
+        Opinionated: This means that the framework chooses how to things for itself. This is the point where a lot of people says "wait a minute, I do not want to participate in it." Here I encourage you to wait for a second and hold your judgment for now, because, actually, it can be a good thing
+
+    <br/>  <br/>  <br/>
+    <h3>Intelligent Auto-Configuration</h3>
+        The intelligent auto-configuration attempts to auto-configure your application based on what dependencies you added. It is contextually aware and smart. Let’s see an example according to a database feature.
+        If you add a dependency to the pom.xml, which relates to a database, the framework assumes that you probably would like to use a database. Then, it auto-configures your application for database access.
+        Furthermore, if the dependency appears for a very specific database, for example, Oracle or MySQL. It can make a more certain assumption and probably will configure that specific database access what you exactly need.
+        </p>
+
+        <br/><br/>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+            <a class="btn btn-primary btn-lg" href="https://dzone.com/articles/what-is-spring-boot" role="button">Source</a>
+        </p>
+        <br/><br/>
+    </div>
+</div>
+
+
+<br/><br/><br/><br/><br/>
+<div th:replace="base :: footer"></div>
+<div th:replace="base :: scripts"></div>
+
+</body>
+</html>
