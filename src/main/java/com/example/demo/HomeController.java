@@ -11,6 +11,9 @@ public class HomeController {
     @RequestMapping("/wlb_tips")
     public String WLB(){return"wlb_tips";}
 
+    @RequestMapping("/wlb_time")
+    public String wlb_time(){ return  "wlb_time"; }
+
     //------------end-------------------
     @RequestMapping("/bootcamp")
 
